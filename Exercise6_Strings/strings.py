@@ -1,4 +1,7 @@
+from os import remove
 import string
+
+from test import test
 
 #String functions
 print("Python"[1])
@@ -50,5 +53,27 @@ num_array=[1,2,3,4,5,6,7,8,9,10,11,12]
 print(" \t\t1\t2\t3\t4\t5\t6\t7\t8\t9\t10\t11\t12")
 print(":-------------------------------")
 for i in range(1,13):
-    print("something")
-   # print(1:"\t\t"1*1"\t1*2)
+    print("")
+
+
+#Reverse string
+def reverse(some_string):
+    return some_string [::-1]
+
+print(reverse("Taran"))
+
+#tests to check if code is working fine
+test(reverse("happy") == "yppah")
+test(reverse("Python") == "nohtyP")
+test(reverse("") == "")
+test(reverse("a") == "aa")
+
+#Function to remove given letter from a string
+def remove_letter(char,str):
+    return str.replace(char,"")
+
+print(remove_letter('a','Taran'))
+
+#tests to verify remove_letter works fine
+test(remove_letter("a","apple") == "pple")
+test(remove_letter("a","banana") == "bnn")
