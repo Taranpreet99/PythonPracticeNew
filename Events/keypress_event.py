@@ -37,7 +37,10 @@ def increase():
         tess.pensize(tess.pensize()+1)
 
 #function to decrease size of the tess
-
+def decrease():
+    global tess
+    if tess.pensize()>1:
+        tess.pensize(tess.pensize()-1)
 
 
 
@@ -49,6 +52,8 @@ wn.onkey(h4,"q")
 wn.onkey(color_red,"r")
 wn.onkey(color_green,"g")
 wn.onkey(color_blue,"b")
+wn.onkey(increase,"+")
+wn.onkey(decrease,"-")
 
 #start listening for the events, without listen() method it won't notice keypress
 wn.listen() 
