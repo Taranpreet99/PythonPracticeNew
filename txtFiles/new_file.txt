@@ -1,0 +1,4 @@
+Today is Friday
+It's beautiful day outside
+Brought pasta for lunch today. 
+Adding snake to this line for testing.

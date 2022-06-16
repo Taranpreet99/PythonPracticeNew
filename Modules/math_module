@@ -1,0 +1,9 @@
+import math
+
+print(math.ceil(3.56))
+print(math.floor(3.56))
+
+#data constants
+print(math.pi)
+print(math.e)
+print(math.tau)
