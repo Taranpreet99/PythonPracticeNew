@@ -1,7 +1,6 @@
 #Eight queen puzzle - put eight queens on chess board and none of them should attack each other
 from unit_tester import test
 
-
 #Function to check if diagonal is shared
 def share_diagonal(x0,y0,x1,y1):
     dy = abs(y1 - y0) #absolute y distance
@@ -49,6 +48,7 @@ test(has_clashes([0,1,2,3]))
 test(not has_clashes([2,0,3,1]))
 
 def main():
+    
     import random
     rng = random.Random() #Instantiate a generator
     bd = list(range(8)) #Generate the initial permutation
